@@ -1,0 +1,23 @@
+total=([]);
+windDataFile1 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2007.csv';
+windData1    = readtable(windDataFile1);
+windDataFile2 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2008.csv';
+windData2    = readtable(windDataFile2);
+windDataFile3 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2009.csv';
+windData3    = readtable(windDataFile3);
+windDataFile4 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2013.csv';
+windData4    = readtable(windDataFile4);
+windDataFile5 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2014.csv';
+windData5    = readtable(windDataFile5);
+windDataFile6 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2015.csv';
+windData6    = readtable(windDataFile6);
+windDataFile7 = 'Shell_Hackathon Dataset\Wind Data\wind_data_2017.csv';
+windData7    = readtable(windDataFile7);
+total(1).windi=windData1;
+total(2).windi=windData2;
+total(3).windi=windData3;
+total(4).windi=windData4;
+total(5).windi=windData5;
+total(6).windi=windData6;
+total(7).windi=windData7;
+save("totalwind",'total')
